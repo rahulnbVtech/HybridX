@@ -1,3 +1,4 @@
+#include <string>
 #include "car.h"
 
 class GasolineCar : public Car {

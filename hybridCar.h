@@ -1,4 +1,8 @@
-class HybridCar : public Car {
+#include <string>
+#include "gasolineCar.h"
+#include "electricCar.h"
+
+class HybridCar : public GasolineCar, public ElectricCar {
 public:
 	std::string Drive();
 	double FuelEfficiency();

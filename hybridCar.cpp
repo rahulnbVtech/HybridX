@@ -1,7 +1,8 @@
+#include <string>
 #include "electricCar.h"
 #include "gasolineCar.h"
 
-class HybridCar : public Car {
+class HybridCar : public ElectricCar, public GasolineCar {
 	std::string Drive() {
 		return "Drive HybridCar";
 	}
