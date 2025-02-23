@@ -1,7 +1,7 @@
 #include <string>
 #include "car.h"
 
-class ElectricCar : public Car {
+class ElectricCar : virtual public Car {
 	std::string ElectricCar::Drive() {
 		return "Drive ElectricCar";
 	}
