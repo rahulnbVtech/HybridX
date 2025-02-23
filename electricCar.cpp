@@ -1,15 +1,15 @@
 #include "electricCar.h"
 
 
-	std::string ElectricCar::Drive() {
-		return "Drive ElectricCar";
-	}
+std::string ElectricCar::Drive() { // inherited from car.h
+	return "Drive ElectricCar";
+}
 
-	double ElectricCar::FuelEfficiency() {
-		return 10;
-	}
+double ElectricCar::FuelEfficiency() { // inherited from car.h
+	return 10;
+}
 
-	std::string ElectricCar::ChargeBattery()
-	{
-		return "ChargeBattery ElectricCar";
-	}
+std::string ElectricCar::ChargeBattery() // unique to electric car, will be used in hybrid
+{
+	return "ChargeBattery ElectricCar";
+}
