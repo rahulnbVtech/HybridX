@@ -1,10 +1,14 @@
-#include <string>
+#ifndef GASCAR_H
+#define GASCAR_H
+
 #include "car.h"
 
 
-class GasolineCar : public Car {
+class GasolineCar :  public virtual Car {
 public:
-	std::string Drive();
-	double FuelEfficiency();
-	std::string Refuel();
+	std::string Drive() override;
+	double FuelEfficiency() override;
+	virtual std::string Refuel();
 };
+
+#endif

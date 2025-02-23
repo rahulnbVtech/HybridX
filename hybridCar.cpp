@@ -1,25 +1,22 @@
-#include <string>
-#include "electricCar.h"
-#include "gasolineCar.h"
+#include "hybridCar.h"
 
-class HybridCar : public ElectricCar, public GasolineCar {
-	std::string Drive() {
+
+	std::string HybridCar::Drive() {
 		return "Drive HybridCar";
 	}
 
-	double FuelEfficiency() {
+	double HybridCar::FuelEfficiency() {
 		return 10;
 	}
 
-	std::string ChargeBattery() {
+	std::string HybridCar::ChargeBattery() {
 		return "ChargeBattery HybridCar";
 	}
 
-	std::string Refuel() {
+	std::string HybridCar::Refuel() {
 		return "Refuel HybridCar";
 	}
 
-	std::string SwitchMode() {
+	std::string HybridCar::SwitchMode() {
 		return "SwitchMode HybridCar";
 	}
-};

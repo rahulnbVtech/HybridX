@@ -1,7 +1,6 @@
-#include <string>
-#include "car.h"
+#include "electricCar.h"
 
-class ElectricCar : virtual public Car {
+
 	std::string ElectricCar::Drive() {
 		return "Drive ElectricCar";
 	}
@@ -10,7 +9,7 @@ class ElectricCar : virtual public Car {
 		return 10;
 	}
 
-	std::string ChargeBattery() {
+	std::string ElectricCar::ChargeBattery()
+	{
 		return "ChargeBattery ElectricCar";
 	}
-};

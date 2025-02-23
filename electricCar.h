@@ -1,9 +1,13 @@
-#include <string>
+#ifndef ELECTRICCAR_H
+#define ELECTRICCAR_H
+
 #include "car.h"
 
-class ElectricCar : public Car {
+class ElectricCar :  public virtual Car {
 public:
-	std::string ElectricCar::Drive();
-	double ElectricCar::FuelEfficiency();
-	std::string ChargeBattery();
+	std::string Drive() override;
+	double FuelEfficiency() override;
+	virtual std::string ChargeBattery();
 };
+
+#endif 

@@ -1,16 +1,14 @@
-#include <string>
-#include "car.h"
+#include "gasolineCar.h"
 
-class GasolineCar : virtual public Car {
-	std::string Drive() {
-		return "Drive GasolineCar";
-	}
 
-	double FuelEfficiency() {
-		return 10;
-	}
+std::string GasolineCar::Drive() {
+	return "Drive GasolineCar";
+}
 
-	std::string Refuel() {
-		return "Refuel GasolineCar";
-	}
-};
+double GasolineCar::FuelEfficiency() {
+	return 10;
+}
+
+std::string GasolineCar::Refuel() {
+	return "Refuel GasolineCar";
+}
